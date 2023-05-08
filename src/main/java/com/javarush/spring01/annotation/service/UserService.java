@@ -3,7 +3,6 @@ package com.javarush.spring01.annotation.service;
 import com.javarush.spring01.annotation.entity.User;
 import com.javarush.spring01.annotation.repo.UserRepo;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
