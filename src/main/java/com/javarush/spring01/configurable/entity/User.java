@@ -1,4 +1,4 @@
-package com.javarush.spring01.configarable.entity;
+package com.javarush.spring01.configurable.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

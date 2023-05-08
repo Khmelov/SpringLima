@@ -17,7 +17,7 @@ public class AnnotationApplication {
         Arrays.asList(names).forEach(System.out::println);
         System.out.println("=============== context =================");
         //one bean
-        UserService userService = applicationContext.getBean(UserService.class);
+        UserService userService = applicationContext.getBean("userService", UserService.class);
         System.out.println("bean userService=" + userService);
         //use bean
         System.out.println("user=" + userService.getUser(1L).orElseThrow());

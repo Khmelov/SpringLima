@@ -1,7 +1,7 @@
-package com.javarush.spring01.configarable;
+package com.javarush.spring01.configurable;
 
-import com.javarush.spring01.configarable.config.ApplicationConfig;
-import com.javarush.spring01.configarable.service.UserService;
+import com.javarush.spring01.configurable.config.ApplicationConfig;
+import com.javarush.spring01.configurable.service.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

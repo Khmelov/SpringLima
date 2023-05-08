@@ -13,7 +13,7 @@
         <constructor-arg index="1" value="maria@gmail.com"/>
     </bean>
 
-    <bean name="userRepository" class="com.javarush.spring01.xml.repo.UserRepository">
+    <bean id="userRepository" class="com.javarush.spring01.xml.repo.UserRepository">
         <property name="userMap">
             <map>
                 <entry key="1" value-ref="ivan"/>
@@ -22,7 +22,7 @@
         </property>
     </bean>
 
-    <bean name="userService" class="com.javarush.spring01.xml.service.UserService">
+    <bean id="userService" class="com.javarush.spring01.xml.service.UserService">
         <constructor-arg ref="userRepository"/>
     </bean>
 

@@ -1,6 +1,6 @@
-package com.javarush.spring01.configarable.config;
+package com.javarush.spring01.configurable.config;
 
-import com.javarush.spring01.configarable.entity.User;
+import com.javarush.spring01.configurable.entity.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import java.util.Map;
 
 @Configuration
-@ComponentScan("com.javarush.spring01.configarable")
+@ComponentScan("com.javarush.spring01.configurable")
 public class ApplicationConfig {
 
     @Bean

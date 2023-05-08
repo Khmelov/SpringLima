@@ -1,7 +1,7 @@
-package com.javarush.spring01.configarable.service;
+package com.javarush.spring01.configurable.service;
 
-import com.javarush.spring01.configarable.entity.User;
-import com.javarush.spring01.configarable.repo.UserRepo;
+import com.javarush.spring01.configurable.entity.User;
+import com.javarush.spring01.configurable.repo.UserRepo;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

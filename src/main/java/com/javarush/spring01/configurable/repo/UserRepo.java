@@ -1,6 +1,6 @@
-package com.javarush.spring01.configarable.repo;
+package com.javarush.spring01.configurable.repo;
 
-import com.javarush.spring01.configarable.entity.User;
+import com.javarush.spring01.configurable.entity.User;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
