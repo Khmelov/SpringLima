@@ -21,7 +21,7 @@ public class TxAnnotationBeanPostProcessor implements BeanPostProcessor {
         Class<?> aClass = bean.getClass();
         if (methodIsAnnotationPresent(aClass)) {
             mapRealClass.putIfAbsent(beanName, aClass);
-            System.out.printf(">>> before init %s%n", beanName);
+            System.out.printf(">>> before tx init %s%n", beanName);
         }
         return bean;
     }
@@ -36,7 +36,7 @@ public class TxAnnotationBeanPostProcessor implements BeanPostProcessor {
         Class<?> aClass = mapRealClass.get(beanName);
         if (aClass != null) {
             bean = proxy(bean, aClass);
-            System.out.printf("<<< after init %s%n", beanName);
+            System.out.printf("<<< after tx init %s%n", beanName);
         }
         return bean;
     }
