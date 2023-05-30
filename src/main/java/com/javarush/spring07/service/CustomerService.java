@@ -1,7 +1,7 @@
 package com.javarush.spring07.service;
 
 import com.javarush.spring07.entity.Customer;
-import com.javarush.spring07.repository.Repo;
+import com.javarush.spring07.repository.CustomerRepo;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.Optional;
 @AllArgsConstructor
 public class CustomerService {
 
-    private final Repo<Customer> customerRepo;
+    private final CustomerRepo customerRepo;
 
     public Optional<Customer> get(Long id) {
         return customerRepo.findById(id);
