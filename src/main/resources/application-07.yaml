@@ -4,7 +4,3 @@ spring:
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
-  mvc:
-    view:
-      prefix: /WEB-INF/jsp/
-      suffix: .jsp
