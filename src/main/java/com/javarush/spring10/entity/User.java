@@ -1,4 +1,4 @@
-package com.javarush.spring09.entity;
+package com.javarush.spring10.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -20,8 +20,5 @@ public class User {
     private String login;
 
     private String password;
-
-    @Enumerated(EnumType.STRING)
-    private Role role;
 
 }
