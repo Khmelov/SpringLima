@@ -1,4 +1,4 @@
-package com.javarush.spring10.controller.html;
+package com.javarush.spring10.controller;
 
 import com.javarush.spring10.entity.User;
 import com.javarush.spring10.service.UserService;
