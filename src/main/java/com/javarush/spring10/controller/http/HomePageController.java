@@ -1,4 +1,4 @@
-package com.javarush.spring10.controller;
+package com.javarush.spring10.controller.http;
 
 
 import org.springframework.stereotype.Controller;
