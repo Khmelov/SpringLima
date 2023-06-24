@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="ivan" scope="prototype" class="com.javarush.spring01.xml.entity.User">
+        <constructor-arg index="0" value="Ivan"/>
+        <constructor-arg index="1" value="ivan@gmail.com"/>
+    </bean>
+
+    <bean id="maria" scope="prototype" class="com.javarush.spring01.xml.entity.User">
+        <constructor-arg index="0" value="Maria"/>
+        <constructor-arg index="1" value="maria@gmail.com"/>
+    </bean>
+
+    <bean id="userRepository" class="com.javarush.spring01.xml.repo.UserRepository">
+        <property name="userMap">
+            <map>
+                <entry key="1" value-ref="ivan"/>
+                <entry key="2" value-ref="maria"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="userService" class="com.javarush.spring01.xml.service.UserService">
+        <constructor-arg ref="userRepository"/>
+    </bean>
+
+</beans>
